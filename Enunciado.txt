@@ -1,0 +1,122 @@
+
+1) INTERFACES Y SERIALIZACIÓN XML
+
+En un proyecto de tipo Biblioteca de Clases llamado "Entidades"
+
+Crear clase pública Planeta:
+-Atributos: (público) id:int
+	    (público) nombre:string
+	    (público) satelites:int
+	    (público) gravedad:double                                           
+-Constructor (sin y con parametros)
+
+-Métodos:   (público) ToString():string ->  Muestra los datos.
+
+
+
+Crear Interface ISerializable y dentro de ella definir:
+-Propiedad:  Path:string  (Sólo lectura)
+-Métodos: SerializarXml():bool
+ 	  DeserializarXml():string
+
+
+Implementar Interface ISerializable en clase Planeta: 
+
+-Propiedad:  Path:string --> el path va a estar en el escritorio, dentro de la carpeta integrador
+y el archivo se va a llamar "planetaSerializado.Xml"
+-Método: SerializarXml():bool  -> serializa y retorna true si serializó.
+ 	 DeserializarXml():string -> deserializa y retorna los datos del planeta.
+
+
+
+-Ir al manejador del evento btn1_Click .
+
+
+
+
+2) TIPOS GENERICOS
+
+En la misma biblioteca de clases:
+Crear clase SistemaSolar<T>:     (restringir para que sólo lo use Planeta)
+
+-Atributos:  (público) lista:List<T>
+             (protegido) capacidad:int
+
+-Constructores: 1-por defecto solo inicia la lista 
+		2-con parámetro que reciba la capacidad (reutilizar).
+
+-Métodos:  (público) Agregar(planeta:Planeta):bool -> Agrega el planeta a la lista y retorna true.
+
+
+
+-Ir al manejador del evento btn2_Click . 
+
+
+
+
+3) EXCEPCIONES
+
+Crear la Excepción "NoHayLugarException"
+Constructor: 1-envía el mensaje de error "No hay lugar para mas planetas"
+a su constructor base "Exception".
+
+-Modificar el método Agregar() de la clase SistemaSolar: 
+Si los planetas superan la capacidad, LANZAR la excepción "NoHayLugarException".
+
+
+
+-Ir al manejador del evento btn3_Click.
+
+
+
+
+4) EVENTOS
+
+-Crear Evento en Planeta "muchaGravedad"
+-Crear DelegadoPlaneta(gravedad:double):void
+
+-Creo la propiedad Gravedad sólo escritura: 
+Asigna el atributo y dispara el evento si la gravedad supera 30 m/s2
+
+
+
+-Ir al manejador del evento btn4_Click.
+
+
+
+
+5)HILOS Y BASE DE DATOS
+
+-Crear clase AccesoDatos que haga la conexion con la base de datos. 
+Agregar los objetos y using correspondientes.
+
+Métodos: ObtenerListaPlaneta():List<Planeta>
+	 AgregarPlaneta(planeta:Planeta):bool
+	 ModificarPlaneta(planeta:Planeta):bool	
+	 EliminarPlaneta(id:Int):bool	 
+
+
+6)TRAER
+
+
+
+-Ir al manejador del evento btnTraer_Click()
+
+
+
+-------  ABM
+
+Completar el formulario de alta:
+1-Atributo: (público)planeta:Planeta 
+2-Sobrecarga de constructor: FormAlta(Planeta p) -->(reutilizar).
+
+-Ir al manejadores de eventos btnAgregar_Click, btnModificar_Click, btnEliminar_Click
+
+
+
+
+
+
+				   
+		
+	

@@ -1,0 +1,8 @@
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Administrador\Desktop\Prueba\integrador\Entidades\obj\Debug\Entidades.csproj.CopyComplete
